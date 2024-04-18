@@ -2,7 +2,6 @@ package co.edu.uniquindio.poo;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.util.logging.Logger;
 import org.junit.jupiter.api.Test;
 
@@ -17,7 +16,7 @@ public class CuadradoTest {
      
         LOG.info("Iniciando test areaCuadrado");
         Cuadrado cuadrado = new Cuadrado(10);
-        assertEquals(100, cuadrado.CalcularArea());
+        assertEquals(100, cuadrado.calcularArea());
         LOG.info("Finalizacion test areaCuadrado");
 
     }
@@ -27,7 +26,7 @@ public class CuadradoTest {
 
         LOG.info("Iniciando test areacuadradonegativo");
         Cuadrado cuadrado = new Cuadrado(-10);
-        assertThrows(Throwable.class, ()-> cuadrado.CalcularArea());
+        assertThrows(Throwable.class, ()-> cuadrado.calcularArea());
         LOG.info("Finalizacion test areacuadradonegativa");
 
     }

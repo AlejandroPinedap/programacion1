@@ -1,20 +1,22 @@
 package co.edu.uniquindio.poo;
 
-public class Cuadrado extends Figura {
-    
+public class Cuadrado extends Rectangulo {
+
     private double lado;
 
-    public Cuadrado (double lado){
+    public Cuadrado (double lado) {
 
-        this.lado = lado;
+        super(lado, lado);
+        this.lado=lado;
+        
 
-
+        
     }
 
-    public double CalcularArea () {
+    public double calcularArea () {
 
         assert lado >= 0; 
-
+        
         return lado * lado;
 
     }

@@ -2,17 +2,17 @@ package co.edu.uniquindio.poo;
 
 public class Rectangulo extends Figura {
 
-    private double alto, ancho;
+    private double lado, ancho;
 
-    public Rectangulo(double ancho, double alto){
+    public Rectangulo(double ancho, double lado){
         this.ancho=ancho;
-        this.alto=alto;
+        this.lado=lado;
     }
 
     public double calcularArea(){
         assert ancho >= 0;
-        assert alto >= 0;
-        return alto * ancho;
+        assert lado >= 0;
+        return lado * ancho;
     }
     
 }
